@@ -130,4 +130,6 @@ def main():
     run_module()
 
 
-if __name__ == '__
+if __name__ == '__main__':
+    main()
+

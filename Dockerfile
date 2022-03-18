@@ -21,7 +21,8 @@ RUN git clone https://github.com/ansible/ansible.git && \
 
 #Add dev files
 COPY modules /home/infoblox/ansible/lib/ansible/modules
-
+COPY tmp /tmp
+COPY playbooks /home/infoblox
 #To Start virtual environment:
 #Ansible development environement [ source /home/infoblox/ansible/ansible-dev-venv/bin/activate && source /home/infoblox/ansible/hacking/env-setup ]
 
