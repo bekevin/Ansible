@@ -20,7 +20,7 @@ RUN git clone https://github.com/ansible/ansible.git && \
     . /home/infoblox/ansible/ansible-dev-venv/bin/activate && pip install -r home/infoblox/ansible/requirements.txt
 
 #Add dev files
-#Copy
+COPY modules /home/infoblox/ansible/lib/ansible/modules
 
 #To Start virtual environment:
 #Ansible development environement [ source /home/infoblox/ansible/ansible-dev-venv/bin/activate && source /home/infoblox/ansible/hacking/env-setup ]
